@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quiz</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="mission">
-        <h1>OUR MISSION:</h1>
-        <p>To amplify human potential and create the next opportunity for people, businesses and communities</p>
+    <div class="container" id="Quizcontainer">
+        <div class="title">Quiz</div>
+        <div class="question" id="question"></div>
+        <label class="option"><input type="radio" name="option" value="1"><span id="opt1"></span></label>
+        <label class="option"><input type="radio" name="option" value="2"><span id="opt2"></span></label>
+        <label class="option"><input type="radio" name="option" value="3"><span id="opt3"></span></label>
+        <label class="option"><input type="radio" name="option" value="4"><span id="opt4"></span></label>
+        <button id="nextbutton" class="next-btn" onclick="loadnextquestion();">Next</button>
+        <button id="prevbutton" style="display: none;" class="prev-btn" onclick="loadprevquestion();">Prev</button>
     </div>
-    <div class="vission">
-        <h1>OUR VISSION:</h1>
-        <p>To amplify human potential and create the next opportunity for people, businesses and communities</p>
-    </div>
+    <div class="container result" id="result" style="display: none;"></div>
+    <script src="questions.js"></script>
+    <script src="main.js"></script>
+    
 </body>
 </html>

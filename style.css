@@ -2,68 +2,22 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-color: #6cf;
 }
-.mission {
-    width: 80%;
-    margin: 0 auto;
-    height: 15rem;
-    text-align: center;
+#Quizcontainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
-    border: 3px solid blue;
-    margin-top: 4rem;
-    position: relative;
+    align-items: center;
+    height: 100vh;
 }
-.vission{
-    width: 80%;
-    margin: 0 auto;
-    height: 15rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    border: 3px solid blue;
-    margin-top: 6rem;
-    position: relative;
+.next-btn {
+    padding: 3px 20px;
+    background-color: green;
+    margin-bottom: 11px;
 }
-.mission::before,.mission::after {
-    content: "";
-    width: 45px;
-    height: 45px;
-    position: absolute;
-    background-color: white;
-    border-left: 3px solid blue;
+.prev-btn{
+    padding: 3px 20px;
+    background-color: blueviolet;
+    margin-bottom: 11px;
 }
-.mission::before {
-    transform: rotate(-45deg);
-    right: -26px;
-    top: -24px;
-}
-.mission::after{
-    bottom: -24px;
-    left: -26px;
-    transform: rotate(135deg);
-}
-.vission::after, .vission::before{
-    content: "";
-    width: 45px;
-    height: 45px;
-    position: absolute;
-    background-color: white;
-    border-left: 3px solid blue;
-}
-.vission::after {
-    top: -24px;
-    right: -26px;
-    transform: rotate(-45deg);
-}
-.vission::before{
-    bottom: -24px;
-    left: -26px;
-    transform: rotate(135deg);
-}
-
-   
